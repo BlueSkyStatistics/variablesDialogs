@@ -8,6 +8,9 @@ var localization = {
         formulaBuilderCondition: "Specify a condition e.g. var1 > 10",
         formulaBuilderConditionTrue: "Value when condition is TRUE",
         formulaBuilderConditionFalse: "Value when condition is FALSE",
+        placeHolder1: "For eg. gpa == 4",
+        placeHolder2: "For eg. \"Honors student\"",
+        placeHolder3: "For eg. \"Regular student\"",
         label2: "Construct the appropriate compute command using the expression builder below, for e.g. var1+var2, as.numeric(var2), substr(var4,2,4)...",
         formula: "Construct a compute command",
         help: {
@@ -44,16 +47,6 @@ For detailed help click on the R icon on the top right hand side of this dialog 
             `}
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 class conditionalCompute extends baseModal {
     constructor() {
@@ -97,21 +90,24 @@ BSkyLoadRefresh("{{dataset.name}}")
                 el: new computeBuilder(config, {
                     no: "formulaBuilderCondition",
                     required:true,
-                    label :localization.en.formulaBuilderCondition
+                    label :localization.en.formulaBuilderCondition,
+                    placeHolder: localization.en.placeHolder1
                 })
             },
             formulaBuilderConditionTrue: {
                 el: new computeBuilder(config, {
                     no: "formulaBuilderConditionTrue",
                     required:true,
-                    label :localization.en.formulaBuilderConditionTrue
+                    label :localization.en.formulaBuilderConditionTrue,
+                    placeHolder: localization.en.placeHolder2
                 })
             },
             formulaBuilderConditionFalse: {
                 el: new computeBuilder(config, {
                     no: "formulaBuilderConditionFalse",
                     required:true,
-                    label :localization.en.formulaBuilderConditionFalse
+                    label :localization.en.formulaBuilderConditionFalse,
+                    placeHolder: localization.en.placeHolder3
                 })
             },
         }

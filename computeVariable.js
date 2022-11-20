@@ -5,8 +5,9 @@ var localization = {
         navigation: "Compute",
         label1: "=",
         newvar: "New/Existing Variable name (no spaces/special characters):",
-        label2: "Expression Builder: Construct the desired expression, for e.g. var1+var2, as.numeric(var2), substr(var4,2,4)...",
+        label2: "Expression Builder:",
         formula: "Construct a compute command",
+        placeHolder: "For e.g. var1+var2+ceiling(var3)",
         help: {
             title: "Compute Variable",
             r_help: "help(log, package ='base')",
@@ -89,7 +90,7 @@ BSkyLoadRefresh("{{dataset.name}}")
 `,
         }
         var objects = {
-            label1: { el: new labelVar(config, { label: localization.en.label1, h: 6 }) },
+            label1: { el: new labelVar(config, { label: localization.en.label1, h: 2 }) },
             content_var: { el: new srcVariableList(config) },
             newvar: {
                 el: new input(config, {
@@ -108,6 +109,7 @@ BSkyLoadRefresh("{{dataset.name}}")
                     no: "formula",
                     required:true,
                     label: localization.en.label2,
+                    placeHolder: localization.en.placeHolder
                 })
             },
           
