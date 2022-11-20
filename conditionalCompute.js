@@ -71,7 +71,6 @@ BSkyLoadRefresh("{{dataset.name}}")
 `,
         }
         var objects = {
-            label1: { el: new labelVar(config, { label: localization.en.label1, h: 2 }) },
             content_var: { el: new srcVariableList(config, {scroll: true}) },
             newvar: {
                 el: new input(config, {
@@ -112,7 +111,7 @@ BSkyLoadRefresh("{{dataset.name}}")
         }
         const content = {
             left: [objects.content_var.el.content],
-            right: [objects.newvar.el.content, objects.label1.el.content, objects.formulaBuilderCondition.el.content,objects.formulaBuilderConditionTrue.el.content,objects.formulaBuilderConditionFalse.el.content],
+            right: [objects.newvar.el.content, objects.formulaBuilderCondition.el.content,objects.formulaBuilderConditionTrue.el.content,objects.formulaBuilderConditionFalse.el.content],
             nav: {
                 name: localization.en.navigation,
                 icon: "icon-sqrt_qmark",
