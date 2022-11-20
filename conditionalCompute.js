@@ -71,7 +71,7 @@ BSkyLoadRefresh("{{dataset.name}}")
 `,
         }
         var objects = {
-            label1: { el: new labelVar(config, { label: localization.en.label1, h: 6 }) },
+            label1: { el: new labelVar(config, { label: localization.en.label1, h: 2 }) },
             content_var: { el: new srcVariableList(config, {scroll: true}) },
             newvar: {
                 el: new input(config, {
@@ -85,7 +85,6 @@ BSkyLoadRefresh("{{dataset.name}}")
                     required: true
                 }),
             },
-            label2: { el: new labelVar(config, { label: localization.en.label2, h: 6 }) },
             formulaBuilderCondition: {
                 el: new computeBuilder(config, {
                     no: "formulaBuilderCondition",
@@ -113,7 +112,7 @@ BSkyLoadRefresh("{{dataset.name}}")
         }
         const content = {
             left: [objects.content_var.el.content],
-            right: [objects.newvar.el.content, objects.label1.el.content, objects.label2.el.content, objects.formulaBuilderCondition.el.content,objects.formulaBuilderConditionTrue.el.content,objects.formulaBuilderConditionFalse.el.content],
+            right: [objects.newvar.el.content, objects.label1.el.content, objects.formulaBuilderCondition.el.content,objects.formulaBuilderConditionTrue.el.content,objects.formulaBuilderConditionFalse.el.content],
             nav: {
                 name: localization.en.navigation,
                 icon: "icon-sqrt_qmark",
