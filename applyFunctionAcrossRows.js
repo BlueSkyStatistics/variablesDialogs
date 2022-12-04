@@ -61,7 +61,7 @@ class applyFunctionAcrossRows extends baseModal {
             RCode: `
 require(dplyr)
 #Apply function to all rows
-{{dataset.name}}\${{selected.newvar | safe}} <-{{dataset.name}}  %>%\n\tselect({{selected.target | safe}}) %>%\n\tapply(1, {{selected.selectctrl | safe}}, na.rm = TRUE)
+{{dataset.name}}\${{selected.newvar | safe}} <-{{dataset.name}}  %>%\n\tdplyr::select({{selected.target | safe}}) %>%\n\tbase::apply(1, {{selected.selectctrl | safe}}, na.rm = TRUE)
 #Refresh the dataset in the grid
 BSkyLoadRefresh("{{dataset.name}}")
             `
