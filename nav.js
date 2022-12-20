@@ -20,9 +20,10 @@ const nav = {
             "name": "Convert",
             "icon": "icon-exchange",
             "children": [
-                "./convertToFactor",
+                "./convertStringToDate",
                 "./convertDateToString",
-                "./convertStringToDate"
+                "./convertToFactor",
+                "./convertToOrdinal"
             ]
         },
         "./deleteVariables",
