@@ -81,7 +81,7 @@ class ConvertToOrdinal extends baseModal {
             modalType: "two",
             splitProcessing:false,
             RCode: `
-#Converts variable: {{selected.vars | safe}} to ordered factor/ordinal
+#Converts variable: {{selected.varname | safe}} to ordered factor/ordinal
 {{selected.vars | safe}} <- base::factor ({{selected.vars | safe}}, ordered = TRUE)
 `
         }
@@ -121,6 +121,7 @@ class ConvertToOrdinal extends baseModal {
        let temp =""
 		instance.objects.trg.el.getVal().forEach(function(value) {
 			code_vars.selected.vars =  code_vars.dataset.name + "\$"+ value
+			code_vars.selected.varname =  value
 			//const cmd = instance.dialog.renderR(code_vars);
 			temp += instance.dialog.renderR(code_vars);
 		});
