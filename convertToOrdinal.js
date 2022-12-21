@@ -73,10 +73,10 @@ help(factor, package =base)
 
 
 
-class ConvertToOrdinal2 extends baseModal {
+class ConvertToOrdinal extends baseModal {
     constructor() {
         var config = {
-            id: "ConvertToOrdinal2",
+            id: "ConvertToOrdinal",
             label: localization.en.title,
             modalType: "two",
             splitProcessing:false,
@@ -134,4 +134,4 @@ class ConvertToOrdinal2 extends baseModal {
     }
 
 }
-module.exports.item = new ConvertToOrdinal2().render()
+module.exports.item = new ConvertToOrdinal().render()
