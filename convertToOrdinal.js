@@ -102,7 +102,7 @@ class ConvertToOrdinal extends baseModal {
             right: [objects.trg.el.content],
             nav: {
                 name: localization.en.navigation,
-                icon: "icon-shapes",
+                icon: "icon-reorder_by_count",
                 modal: config.id
             }
         }
