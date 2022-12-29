@@ -11,8 +11,8 @@ const nav = {
                 "./computeDummyVariables",
                 "./computeVariable",
                 "./conditionalCompute",
-                "./conditionalComputeMayo"
-                
+                "./conditionalComputeMayo",
+                "./CumulativeStatisticVariable"
             ]
         },
         "./concatenateVariables",
@@ -39,9 +39,12 @@ const nav = {
                 "./specifyLevelsToKeepOrReplace",
                 "./reorderByCount",
                 "./reorderByOccurance",
-                "./byAnotherVariable"
+                "./byAnotherVariable",
+                "./FactorLevelManualReorder"
             ]
         },
+        "./idvar",    
+        "./lagorlead",        
         {
             "name": "Missing Values",
             "icon": "icon-na",
