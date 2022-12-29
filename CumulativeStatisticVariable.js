@@ -119,7 +119,7 @@ BSkyLoadRefreshDataframe("{{dataset.name}}")
             right: [objects.varname.el.content, objects.statvar.el.content, objects.groupbyvars.el.content, objects.func.el.content],
             nav: {
                 name: localization.en.navigation,
-                icon: "icon-sigma-cumulative",
+                icon: "icon-signal-1",
                 modal: config.id
             }
         };
