@@ -4,6 +4,16 @@ const nav = {
     "buttons": [
         "./binNumericVariables",
         {
+            "name": "Box-Cox",
+            "icon": "icon-sixsigma",
+            "children": [
+                "./normalityBoxCoxTransform",
+                "./normalityBoxCoxInspection",
+                "./normalityBoxCoxAddRemoveLambda",
+                "./normalityInverseBoxCox"
+            ]
+        },        			
+        {
             "name": "Compute",
             "icon": "icon-calculator",
             "children": [

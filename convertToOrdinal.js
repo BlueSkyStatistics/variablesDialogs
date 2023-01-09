@@ -14,7 +14,6 @@ The function factor is used to an ordered factor/ordinal variable. The factor le
 <br/>
 <code>
 factor(x = character(),  ordered = TRUE)
-
 </code> <br/>
 <b>Arguments</b><br/>
 <ul>
