@@ -7,9 +7,9 @@ const nav = {
             "name": "Box-Cox",
             "icon": "icon-sixsigma",
             "children": [
+                "./normalityBoxCoxAddRemoveLambda",
                 "./normalityBoxCoxTransform",
                 "./normalityBoxCoxInspection",
-                "./normalityBoxCoxAddRemoveLambda",
                 "./normalityInverseBoxCox"
             ]
         },        			
@@ -22,7 +22,6 @@ const nav = {
                 "./computeVariable",
                 "./conditionalCompute",
                 "./conditionalComputeMayo"
-                
             ]
         },
         "./concatenateVariables",
@@ -30,8 +29,8 @@ const nav = {
             "name": "Convert",
             "icon": "icon-exchange",
             "children": [
-                "./convertStringToDate",
                 "./convertDateToString",
+                "./convertStringToDate",
                 "./convertToFactor",
                 "./convertToOrdinal"
             ]
@@ -48,18 +47,18 @@ const nav = {
                 "./lumpIntoOther",
                 "./specifyLevelsToKeepOrReplace",
                 "./reorderByCount",
+				"./byAnotherVariable",
                 "./reorderByOccurance",
-                "./byAnotherVariable"
             ]
         },
         {
             "name": "Missing Values",
             "icon": "icon-na",
             "children": [
-                "./removeNAs",
-                "./missingValuesBasic",
                 "./replaceMissingValues",
                 "./missValsModelImputation",
+                "./missingValuesBasic",
+                "./removeNAs",
                 "./missValsFormula"
             ]
         },

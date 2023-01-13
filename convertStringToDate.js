@@ -145,7 +145,7 @@ BSkyLoadRefresh(bskyDatasetName="{{dataset.name}}",load.dataframe=TRUE)
             bottom: [timeZoneOptions.el.content],
             nav: {
                 name: localization.en.navigation,
-                icon: "icon-date",
+                icon: "icon-calendar-1",
                 onclick: `r_before_modal("${config.id}")`,
                 modal_id: config.id
             }
