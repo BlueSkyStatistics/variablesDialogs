@@ -5,7 +5,7 @@ const nav = {
         "./binNumericVariables",
         {
             "name": "Box-Cox",
-            "icon": "icon-sixsigma",
+            "icon": "icon-gaussian-function",
             "children": [
                 "./normalityBoxCoxAddRemoveLambda",
                 "./normalityBoxCoxTransform",

@@ -197,7 +197,7 @@ oldLambda = NULL
 					],
             nav: {
                 name: localization.en.navigation,
-                icon: "icon-sixsigma",
+                icon: "icon-gaussian-function",
                 modal: config.id
             }
         };
