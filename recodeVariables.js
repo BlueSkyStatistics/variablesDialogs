@@ -135,8 +135,8 @@ BSkyLoadRefresh("{{dataset.name}}")
                     extraction: "TextAsIs",
                     value: "",
                     ml: 4,
-                    type: "character"
-                }),
+                    allow_spaces:true,
+                    }),
             },
             label3: { el: new labelVar(config, { label: localization.en.label3, h: 6, style: "mt-3" }) },
             label4: { el: new labelVar(config, { label: localization.en.label4, h: 6 }) },

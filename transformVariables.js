@@ -125,7 +125,7 @@ BSkyLoadRefresh("{{dataset.name}}")
                     extraction: "TextAsIs",
                     value: "",
                     ml: 4,
-                    type: "character"
+                    allow_spaces:true,
                 }),
             },
             prefix: { el: new radioButton(config, { label: localization.en.prefix, no: "grp10", increment: "prefix", value: "Prefix", state: "", extraction: "ValueAsIs", dependant_objects: ["enterPrefix"] }) },
