@@ -64,7 +64,7 @@ BSkyLoadRefresh("{{selected.newdatasetname | safe}}{{selected.rd | safe}}")
             label0: { el: new labelVar(config, { label: localization.en.label0, h: 6 }) },
             content_var: { el: new srcVariableList(config, {action: "move"}) },
             label1: { el: new labelVar(config, { label: localization.en.label1,style: "mt-2",h: 5 }) },
-            New: { el: new radioButton(config, { label: localization.en.New, no: "rd", increment: "New", value: "", state: "checked", extraction: "ValueAsIs", dependant_objects: ['newdatasetname'] }) },
+            New: { el: new radioButton(config, { label: localization.en.New, no: "rd", increment: "New", value: "", state: "checked", extraction: "ValueAsIs",required: true, dependant_objects: ['newdatasetname'] }) },
             newdatasetname: {
                 el: new input(config, {
                     no: 'newdatasetname',

@@ -116,7 +116,7 @@ BSkyLoadRefresh("{{dataset.name}}")
                 })
             },
             label2: { el: new labelVar(config, { label: localization.en.label2, style: "mt-3",h: 5 }) },
-            suffix: { el: new radioButton(config, { label: localization.en.suffix, no: "grp10", increment: "suffix", value: "Suffix", state: "checked", extraction: "ValueAsIs", dependant_objects: ["enterSuffix"] }) },
+            suffix: { el: new radioButton(config, { label: localization.en.suffix, no: "grp10", increment: "suffix", value: "Suffix", state: "checked", required:true,extraction: "ValueAsIs", dependant_objects: ["enterSuffix"] }) },
             enterSuffix: {
                 el: new input(config, {
                     no: 'enterSuffix',
@@ -128,7 +128,7 @@ BSkyLoadRefresh("{{dataset.name}}")
                     allow_spaces:true,
                 }),
             },
-            prefix: { el: new radioButton(config, { label: localization.en.prefix, no: "grp10", increment: "prefix", value: "Prefix", state: "", extraction: "ValueAsIs", dependant_objects: ["enterPrefix"] }) },
+            prefix: { el: new radioButton(config, { label: localization.en.prefix, no: "grp10", increment: "prefix", value: "Prefix", state: "", required:true,extraction: "ValueAsIs", dependant_objects: ["enterPrefix"] }) },
             enterPrefix: {
                 el: new input(config, {
                     no: 'enterPrefix',

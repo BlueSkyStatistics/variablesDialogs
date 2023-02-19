@@ -97,6 +97,7 @@ BSkyLoadRefresh("{{dataset.name}}")
                     multiple: false,
                     extraction: "NoPrefix|UseComma",
                     required: true,
+                    default: "mean",
                     options: ["mean", "median", "min", "max", "sd", "sum", "var",]
                 })
             },

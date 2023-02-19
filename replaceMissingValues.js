@@ -4,7 +4,7 @@ var localization = {
         title: "Replace Missing Values (String/Factor Variables)",
         navigation: "Character/Factor",
         destination: "Destination Variables",
-        repString: "Enter string to replace NAs by. Note: Don't enclose the string by quotes. For factor variables, the specified value must be a level of the factor, see Variables>Add",
+        repString: "Enter string to replace NAs by. Note: Don't enclose the string by quotes. For factor variables, the specified value must be a level of the factor, see Variables>Factor Levels>Add",
         help: {
             title: "Replace Missing Values (String/Factor Variables)",
             r_help: "help(is.na,package=base)",
